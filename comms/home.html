@@ -1,0 +1,10 @@
+<html>
+    {% if categ %}
+        <p> categ present </p>
+    {% else %}
+        <p> categ not present </p>
+    {% endif %}
+    {% load comments %}
+    {% get_comment_count for categ as comment_count %}
+    {% render_comment_list for categ %}
+</html>
